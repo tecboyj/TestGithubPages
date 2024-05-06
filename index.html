@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    Hello World
-</body>
+    <span style="background-color: lightgreen;">This is a test github pages website</span><br>
+    <span style="background-color: lightblue;">Hello wizzardbenny!</span><br>
+    <button onclick="doSomething()">Click Me!</button><br>
+    <p id="count" hidden="true">0</p>
+
+    <script>
+        function doSomething() {
+            document.getElementById("count").hidden = false;
+            document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML) + 1;
+        }
+    </script>
 </html>
